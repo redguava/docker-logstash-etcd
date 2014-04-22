@@ -5,6 +5,6 @@ RUN curl -O https://download.elasticsearch.org/elasticsearch/elasticsearch/elast
 
 ADD logstash.conf /logstash.conf
 
-ADD supervisor-logstash.conf /etc/supervisord.d/logstash.conf
-ADD supervisor-elasticsearch.conf /etc/supervisord.d/elasticsearch.conf
+ADD supervisord-logstash.conf /etc/supervisord.d/logstash.conf
+ADD supervisord-elasticsearch.conf /etc/supervisord.d/elasticsearch.conf
 CMD /run.sh
