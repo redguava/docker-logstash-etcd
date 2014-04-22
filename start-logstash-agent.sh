@@ -13,7 +13,7 @@ sed -i -e "s/SYSLOG_S3_REGION/${SYSLOG_S3_REGION}/g" $LOGSTASH_CONFIG
 sed -i -e "s/SYSLOG_S3_ACCESS_KEY/${SYSLOG_S3_ACCESS_KEY}/g" $LOGSTASH_CONFIG
 sed -i -e "s/SYSLOG_S3_SECRET_KEY/${SYSLOG_S3_SECRET_KEY}/g" $LOGSTASH_CONFIG
 
-export JAVA_HOME="/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.51.x86_64/jre"
+export JAVA_HOME="/usr/lib/jvm/java-1.7.0-openjdk.x86_64"
 export JAVACMD="${JAVA_HOME}/bin/java"
 
 /logstash-1.4.0/bin/logstash agent -f /logstash.conf
